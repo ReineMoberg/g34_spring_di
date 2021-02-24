@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Programmer implements Employee {
 
-    private SalaryService salaryService;
+    private SalaryService salaryService; //An interface (data type). No instance (object) here.
     // dependency injection in setter
 
     @Autowired
@@ -30,7 +30,7 @@ public class Programmer implements Employee {
     }
 
     @Override
-    public int getSalary() {
+    public int getSalary() {              // Makes a method call to passed object that implements interface
         return salaryService.getSalary(); // random value
     }
 }

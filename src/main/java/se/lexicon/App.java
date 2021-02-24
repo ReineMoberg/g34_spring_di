@@ -11,7 +11,7 @@ public class App
 {
     public static void main( String[] args )
     {
-
+        //Load the spring configuration file
         //ClassPathXmlApplicationContext  context= new ClassPathXmlApplicationContext("applicationContext.xml");
 
         AnnotationConfigApplicationContext context= new AnnotationConfigApplicationContext(AppConfig.class);
